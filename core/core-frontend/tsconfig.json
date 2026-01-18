@@ -16,21 +16,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": [
-      "vite/client",
-      "vite-plugin-svg-icons/client",
-      "element-plus-secondary/global",
-    ],
+    "types": ["vite/client", "vite-plugin-svg-icons/client", "element-plus-secondary/global"]
   },
-  "include": [
-    "src/**/*",
-    "electron-main/**/*.ts",
-    "types/**/*.d.ts",
-    "types"
-  ],
-  "exclude": [
-    "dist",
-    "lib",
-    "node_modules",
-  ]
+  "include": ["src/**/*", "electron-main/**/*.ts", "types/**/*.d.ts", "types"],
+  "exclude": ["dist", "lib", "node_modules"]
 }

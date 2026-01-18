@@ -1406,7 +1406,7 @@ export async function exportGridPivot(instance: PivotSheet, chart: ChartObj) {
       const { fieldValue } = dataCellMeta
       const cell = worksheet.getCell(rowIndex + maxColHeight + 1, rowLength + colIndex + 1)
       cell.alignment = { vertical: 'middle', horizontal: 'center' }
-      if (fieldValue === "-" || fieldValue === null || fieldValue === undefined) {
+      if (fieldValue === '-' || fieldValue === null || fieldValue === undefined) {
         cell.value = '-'
         continue
       }
@@ -1596,7 +1596,7 @@ export async function exportRowQuotaGridPivot(instance: PivotSheet, chart: Chart
       const { fieldValue } = dataCellMeta
       const cell = worksheet.getCell(rowIndex + maxColHeight + 1, rowLength + colIndex + 2)
       cell.alignment = { vertical: 'middle', horizontal: 'center' }
-      if (fieldValue === "-" || fieldValue === null || fieldValue === undefined) {
+      if (fieldValue === '-' || fieldValue === null || fieldValue === undefined) {
         cell.value = '-'
         continue
       }
@@ -1737,7 +1737,7 @@ export async function exportTreePivot(instance: PivotSheet, chart: ChartObj) {
       const { fieldValue } = dataCellMeta
       const cell = worksheet.getCell(rowIndex + maxColHeight + 1, colIndex + 1 + 1)
       cell.alignment = { vertical: 'middle', horizontal: 'center' }
-      if (fieldValue === "-" || fieldValue === null || fieldValue === undefined) {
+      if (fieldValue === '-' || fieldValue === null || fieldValue === undefined) {
         cell.value = '-'
         continue
       }
@@ -1879,7 +1879,7 @@ export async function exportRowQuotaTreePivot(instance: PivotSheet, chart: Chart
       const { fieldValue } = dataCellMeta
       const cell = worksheet.getCell(rowIndex + maxColHeight + 1, colIndex + 2)
       cell.alignment = { vertical: 'middle', horizontal: 'center' }
-      if (fieldValue === "-" || fieldValue === null || fieldValue === undefined) {
+      if (fieldValue === '-' || fieldValue === null || fieldValue === undefined) {
         cell.value = '-'
         continue
       }
@@ -2206,7 +2206,7 @@ export class CustomDataCell extends TableDataCell {
    * @protected
    */
   protected drawTextShape() {
-    if(this.meta.isMergedCell) {
+    if (this.meta.isMergedCell) {
       return
     }
     if (this.meta.autoWrap) {
